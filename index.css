@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+#header #title {
+    font-size: medium;
+}
+
+#instructions {
+    padding: 0 1rem;
+}
+
+#instructions p {
+    margin-bottom: 0.5rem;
+}
+
+#books {
+    display: flex;
+    margin-top: 1rem;
+}
+
+#books .book {
+    width: 16.66%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#books .book .doubt {
+    font-style: italic;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+#books .book:hover .doubt {
+    opacity: 1;
+}
+
+#books .book a {
+    display: flex;
+    padding: 1rem;
+}
+
+#books .book .cover {
+    width: 100%;
+    transition: 0.3s;
+}
+
+#books .book:hover .cover {
+    scale: 1.1;
+}
+
+#books .book #brave-new-world.cover {
+    rotate: 2.5deg;
+    translate: 1rem 0.5rem;
+}
+
+#books .book #fahrenheit-451.cover {
+    rotate: -1deg;
+    translate: 0.5rem 0.5rem;
+}
+
+#books .book #of-mice-and-men.cover {
+    rotate: 2deg;
+    translate: 0.5rem 0.5rem;
+}
+
+#books .book #surely-youre-joking.cover {
+    rotate: -3deg;
+    translate: 1rem 0.5rem;
+}
+
+#books .book #the-little-prince.cover {
+    rotate: -1.5deg;
+}
+
+#books .book #where-math-comes-from.cover {
+    rotate: 1deg;
+    translate: -1rem 1rem;
+}
+
+@media only screen and (max-width: 800px) {
+    #books {
+        flex-wrap: wrap;
+    }
+
+    #books .book {
+        width: 33%;
+    }
+}

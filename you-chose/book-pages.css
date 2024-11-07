@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+}
+
+.cover {
+    width: 20rem;
+}
+
+.result {
+    margin-left: 1rem;
+}
+
+.result p, .result em {
+    margin: 1rem 0;
+}
